@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MyProfile">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/me"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+                <TextView
+                    android:id="@+id/textView_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="@string/textView_2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+                <View
+                    android:id="@+id/horizantal_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:paddingBottom="10dp"
+                    android:background="#a4a4a4"
+                    app:layout_constraintTop_toBottomOf="@id/textView_2"/>
+
+                <TextView
+                    android:id="@+id/textView_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="@string/textView_3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/horizantal_line" />
+
+                <TextView
+                    android:id="@+id/track_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="23dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="22sp"
+                    android:text="@string/track_tv"
+                    app:layout_constraintStart_toEndOf="@id/textView_3"
+                    app:layout_constraintTop_toBottomOf="@id/horizantal_line" />
+
+                <TextView
+                    android:id="@+id/textView_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="@string/textView_4"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_3" />
+
+                <TextView
+                    android:id="@+id/kenya_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="23dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="22sp"
+                    android:text="@string/country_tv"
+                    app:layout_constraintStart_toEndOf="@id/textView_4"
+                    app:layout_constraintTop_toBottomOf="@id/textView_3" />
+
+                <TextView
+                    android:id="@+id/textView_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="@string/textView_5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_4" />
+
+                <TextView
+                    android:id="@+id/email_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:text="@string/email_tv"
+                    app:layout_constraintStart_toEndOf="@id/textView_5"
+                    app:layout_constraintTop_toBottomOf="@id/textView_4" />
+
+                <TextView
+                    android:id="@+id/textView_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="@string/textView_6"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_5" />
+
+                <TextView
+                    android:id="@+id/phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="22sp"
+                    android:text="@string/phone_tv"
+                    app:layout_constraintStart_toEndOf="@id/textView_6"
+                    app:layout_constraintTop_toBottomOf="@id/textView_5" />
+
+                <TextView
+                    android:id="@+id/textView_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="@string/textView_7"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_6" />
+
+                <TextView
+                    android:id="@+id/slack_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="22sp"
+                    android:text="@string/slack_tv"
+                    app:layout_constraintStart_toEndOf="@id/textView_7"
+                    app:layout_constraintTop_toBottomOf="@id/textView_6" />
+
+</android.support.constraint.ConstraintLayout>

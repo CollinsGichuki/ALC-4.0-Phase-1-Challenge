@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ALC Phase 1</string>
+    <string name="textView_1">Welcome to ALC 4.0</string>
+    <string name="button_1">About ALC</string>
+    <string name="button_2">My Profile</string>
+    <string name="textView_2">Collins Gichuki</string>
+    <string name="textView_3">Track:</string>
+    <string name="track_tv">Android Intermediate</string>
+    <string name="textView_4">Country:</string>
+    <string name="country_tv">Kenya </string>
+    <string name="textView_5">Email:</string>
+    <string name="email_tv">collinsgichuki9@gmail.com</string>
+    <string name="textView_6">Phone Number:</string>
+    <string name="phone_tv">0719794487</string>
+    <string name="textView_7">Slack Username:</string>
+    <string name="slack_tv">Snilloc</string>
+</resources>
