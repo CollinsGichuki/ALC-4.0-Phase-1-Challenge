@@ -1,6 +1,8 @@
 package com.example.android.alcphase1;
 
+import android.content.Intent;
 import android.net.http.SslError;
+import android.os.Handler;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -45,15 +47,26 @@ public class AboutALC extends AppCompatActivity {
         }
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
+    switch (item.getItemId()){
             case android.R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        new Handler().postDelayed(() ->{
+            Intent intent = new Intent(AboutALC.this, MainActivity.class);
+            finish();
+            startActivity(intent);
+        }, 0);
     }
 
 }

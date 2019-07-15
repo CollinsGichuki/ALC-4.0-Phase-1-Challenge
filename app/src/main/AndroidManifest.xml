@@ -14,8 +14,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MyProfile"
             android:label="My Profile"/>
+        <!-- Setting the parent Activity to handle on back click on the nav bar -->
         <activity android:name=".AboutALC"
-            android:label="About ALC"/>
+            android:label="About ALC"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
